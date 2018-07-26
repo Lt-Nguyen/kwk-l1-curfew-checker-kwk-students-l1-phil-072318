@@ -5,9 +5,9 @@ $operation = gets.strip
 
 if $operation == "add"
   puts "Pick a number."
-  $number1 = gets.strip
+  $number1 = gets.strip.to_i
   puts "Pick another number."
-  $number2 = gets.strip
+  $number2 = gets.strip.to_i
   $new_number = $number1 + $number2
   puts "Your answer is #{$new_number}."
   
