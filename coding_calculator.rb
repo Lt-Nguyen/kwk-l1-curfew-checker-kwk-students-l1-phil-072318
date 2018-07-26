@@ -13,11 +13,26 @@ if $operation == "add"
   
 elsif $operation == "subtract"
   puts "Pick a number."
+  $number1 = gets.strip.to_i
+  puts "Pick another number."
+  $number2 = gets.strip.to_i
+  $new_number = $number1 - $number2
+  puts "Your answer is #{$new_number}."
   
 elsif $operation == "multiply"
   puts "Pick a number."
+  $number1 = gets.strip.to_i
+  puts "Pick another number."
+  $number2 = gets.strip.to_i
+  $new_number = $number1 * $number2
+  puts "Your answer is #{$new_number}."
 
 else $operation == "divide"
   puts "Pick a number."
+  $number1 = gets.strip.to_i
+  puts "Pick another number."
+  $number2 = gets.strip.to_i
+  $new_number = $number1 / $number2
+  puts "Your answer is #{$new_number}."
 
 end
